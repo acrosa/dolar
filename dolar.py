@@ -70,7 +70,7 @@ model.fit(X, y, epochs=n_epochs, verbose=0)
 # predict dolar 🐬
 predicted_values = []
 last_predicted = data.tipo_cambio_a3500.values[-4:]
-n_values_to_predict = 300
+n_values_to_predict = 4
 
 for x in range(n_values_to_predict):
     x_input = last_predicted.reshape((1, n_seq, n_steps, n_features))
